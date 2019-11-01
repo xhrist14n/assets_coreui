@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flat Gauge JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="flat,gauge,JS">
+    <meta name="author" content="ranbuch@gmail.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <link rel="stylesheet" href="site/css/main.css">
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body class="pushable">
+
+    <!-- Following Menu -->
+    <!--<div class="ui large top fixed menu transition hidden">
+        <div class="ui container">
+            <a class="active item">Home</a>
+            <a class="item">Work</a>
+            <a class="item">Company</a>
+            <a class="item">Careers</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui button">Log in</a>
+                </div>
+                <div class="item">
+                    <a class="ui primary button">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- Sidebar Menu -->
+    <!--<div class="ui vertical inverted sidebar menu left">
+        <a class="active item">Home</a>
+        <a class="item">Work</a>
+        <a class="item">Company</a>
+        <a class="item">Careers</a>
+        <a class="item">Login</a>
+        <a class="item">Signup</a>
+    </div>-->
+
+
+    <!-- Page Contents -->
+    <div class="pusher">
+        <div class="ui inverted vertical masthead center aligned segment main-bg">
+
+            <!--<div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item"><i class="sidebar icon"></i></a>
+                    <a class="active item">Home</a>
+                    <a class="item">Work</a>
+                    <a class="item">Company</a>
+                    <a class="item">Careers</a>
+                    <div class="right item">
+                        <a class="ui inverted button">Log in</a>
+                        <a class="ui inverted button">Sign Up</a>
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="ui text container center-vertical float-right">
+                <h1 class="ui inverted header">
+                    Flat-Gauge-JS
+                </h1>
+                <h2>a flat design gauges js library.</h2>
+                <!--<div class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>-->
+                <h4>
+                    designed by <a target="_blank" class="theme-color" href="https://www.linkedin.com/in/or-sabag-3b809497/">Or Sabag</a>
+                </h4>
+            </div>
+
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <div class="ui card center-me">
+                            <div class="content">
+                                <div class="header">No jQuery required</div>
+                                <div class="meta">standalone</div>
+                                <!--<div class="description">
+                                    <p>
+                                       </p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eight wide column text-center">
+                        <div class="ui card center-me">
+                            <div class="content">
+                                <div class="header">No d3 required</div>
+                                <div class="meta">standalone</div>
+                                <!--<div class="description">
+                                    <p>
+                                       </p>
+                                </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <h3 class="ui header">Spinner</h3>
+                        <code>
+                            var spinner = new FlatGauge.Spinner(element, options);
+                        </code>
+                        <br><br><br>
+                        <div class="ui large button" id="toggleSpinner">toggle spinner</div>
+                    </div>
+                    <div class="eight wide right floated column">
+                        <div class="center-me diameter" id="spinnerTarget"></div>
+                        <!--<img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h4 class="ui horizontal header divider">
+                            <a href="#">Options:</a>
+                        </h4>
+                        <code>
+                            var options = {
+                                rotationSpeed: 1000,
+                                title: {
+                                    text: 'Spinning'
+                                },
+                                highlight: true
+                            }
+                        </code>
+                        <br>
+                        <code>
+                            spinner.update(options);
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <h3>Tune</h3>
+                        <code>
+                            var tune = new FlatGauge.Tune(element, options);
+                        </code>
+                        <div>
+                            needle
+                            <input type="range" value="50" id="tuneRange" min="0" max="100">
+                            <br>
+                            <input type="number" disabled id="rangeNumber">
+                        </div>
+                        <div>
+                            left
+                            <input type="range" value="30" id="tuneRangeLeft" min="0" max="100">
+                            <input type="checkbox" id="tuneHollowLeft">
+                            <br>
+                            <input type="number" disabled id="rangeLeftNumber">
+                        </div>
+                        <div>
+                            rigth
+                            <input type="range" value="70" id="tuneRangeRight" min="0" max="100">
+                            <input type="checkbox" id="tuneHollowRight">
+                            <br>
+                            <input type="number" disabled id="rangeRightNumber">
+                        </div>
+                        <div>
+                            icon
+                            <input type="range" value="70" id="tuneRangeIcon" min="0" max="100">
+                            <input type="checkbox" id="tuneRangeIconEnabled">
+                            <br>
+                            <input type="number" disabled id="rangeIconNumber">
+                        </div>
+                    </div>
+                    <div class="eight wide right floated column">
+                        <div class="center-me" id="tuneTarget"></div>
+                    </div>
+                </div>
+                <div class="row" id="tuneCodeWrap">
+                    <div class="column">
+                        <h4 class="ui horizontal header divider">
+                            <a href="#">Options:</a>
+                        </h4>
+                        <code>
+                            var options = 
+                        </code>
+                        <code id="tuneCode"></code>
+                        <br>
+                        <code>
+                            tune.update(options);
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <h3>Multi-Tune</h3>
+                        <code>
+                            var multitune = new FlatGauge.MultiTune(element, options);
+                        </code>
+                        <div>
+                            needle
+                            <input type="range" value="50" id="multituneRange" min="0" max="100">
+                            <br>
+                            <input type="number" disabled id="multituneRangeNumber">
+                        </div>
+                        <div>
+                            left
+                            <input type="range" value="30" id="multituneRangeLeft" min="0" max="100">
+                            <input type="checkbox" id="multituneHollowLeft">
+                            <br>
+                            <input type="number" disabled id="multituneRangeLeftNumber">
+                        </div>
+                        <div>
+                            rigth
+                            <input type="range" value="70" id="multituneRangeRight" min="0" max="100">
+                            <input type="checkbox" id="multituneHollowRight">
+                            <br>
+                            <input type="number" disabled id="multituneRangeRightNumber">
+                        </div>
+                        <div>
+                            icon
+                            <input type="range" value="70" id="multituneRangeIcon" min="0" max="100">
+                            <input type="checkbox" id="multituneRangeIconEnabled">
+                            <br>
+                            <input type="number" disabled id="multirangeIconNumber">
+                        </div>
+                    </div>
+                    <div class="eight wide right floated column">
+                        <div class="center-me" id="multituneTarget"></div>
+                    </div>
+                </div>
+                <div class="row" id="multituneCodeWrap">
+                    <div class="column">
+                        <h4 class="ui horizontal header divider">
+                            <a href="#">Options:</a>
+                        </h4>
+                        <code>
+                            var options = 
+                        </code>
+                        <code id="multituneCode"></code>
+                        <br>
+                        <code>
+                            multitune.update(options);
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <h3>Timer</h3>
+                        <code>
+                            var timer = new FlatGauge.Timer(element, options);
+                        </code>
+                    </div>
+                    <div class="eight wide right floated column">
+                        <div class="center-me" id="timerTarget"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h4 class="ui horizontal header divider">
+                            <a href="#">Options:</a>
+                        </h4>
+                        <code>
+                            {
+                                animationDuration: 500,
+                                time: {
+                                    hours: 2,
+                                    minutes: 45,
+                                    seconds: 3
+                                },
+                                percentage: 33
+                            }
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <h3>AM-PM (not ready yet!)</h3>
+                        <code>
+                            var ampm = new FlatGauge.AmPm(element, options);
+                        </code>
+                    </div>
+                    <div class="eight wide right floated column">
+                        <div class="center-me" id="ampmTarget"></div>
+                        <br><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h4 class="ui horizontal header divider">
+                            <a href="#">Options:</a>
+                        </h4>
+                        <code>
+                            {
+                                rotationSpeed: 1000
+                            }
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="eight wide column text-center">
+                        <h3>Range</h3>
+                        <code>
+                            var range = new FlatGauge.Range(element, options);
+                        </code>
+                    </div>
+                    <div class="eight wide right floated column">
+                        <div class="center-me" id="rangeTarget"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h4 class="ui horizontal header divider">
+                            <a href="#">Options:</a>
+                        </h4>
+                        <code>
+                            {
+                                title: {
+                                    text: 'range'
+                                },
+                                showEdges: false,
+                                minMaxVal: { min: 25, max: 75 },
+                                highlight: true,
+                                hideBottom: true
+                            }
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">github</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://github.com/ranbuch/flat-gauge-js" class="item">repository</a>
+                            <a href="https://github.com/ranbuch/flat-gauge-js/issues" class="item">bugs</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">npm</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://www.npmjs.com/package/flat-gauge-js" class="item">module</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">bower</h4>
+                        <div class="ui inverted link list">
+                            <a href="https://libraries.io/bower/flat-gauge-js" class="item">module</a>
+                        </div>
+                    </div>
+
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header">license</h4>
+                        <p>MIT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+    <script src="site/script/main.js"></script>
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>

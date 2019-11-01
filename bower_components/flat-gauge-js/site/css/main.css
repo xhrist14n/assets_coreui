@@ -1,0 +1,58 @@
+.masthead.segment {
+    min-height: 352px;
+    padding: 1em 0em;
+}
+
+.center-vertical {
+    margin-top: 100px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+code, code * {
+    background-color: rgba(200,200,200,0.2);
+}
+
+#tuneCodeWrap, #multituneCodeWrap {
+    display: none;
+}
+
+.ui.inverted.segment.main-bg {
+    background: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: #303032;
+    text-shadow: 3px 3px 2px #303032;
+}
+
+.float-right {
+    float: right;
+}
+
+body .ui.grid>.row {
+    padding: 3rem 0;
+}
+
+.center-me, .ui.card.center-me {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.diameter {
+    width: 176px;
+}
+
+input:disabled {
+    border: none;
+    background: transparent;
+    text-align: right;
+    width: 85px;
+}
+
+.theme-color {
+    color: rgb(76, 206, 173);
+}

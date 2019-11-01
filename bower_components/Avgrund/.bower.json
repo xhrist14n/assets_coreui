@@ -1,0 +1,15 @@
+{
+  "name": "Avgrund",
+  "homepage": "https://github.com/hakimel/Avgrund",
+  "version": "0.1.0",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "3e42432901b3f139d830c9fd55d4b49f62fcecc4"
+  },
+  "_source": "https://github.com/hakimel/Avgrund.git",
+  "_target": "^0.1.0",
+  "_originalSource": "Avgrund",
+  "_direct": true
+}

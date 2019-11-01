@@ -1,0 +1,19 @@
+{
+  "name": "garlicjs",
+  "version": "1.4.2",
+  "main": "./dist/garlic.min.js",
+  "dependencies": {
+    "jquery": "*",
+    "bootstrap": "^3.3.7"
+  },
+  "homepage": "https://github.com/guillaumepotier/Garlic.js",
+  "_release": "1.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.4.2",
+    "commit": "228e4b661e17f4884ec61bf24f606cdbc49a0679"
+  },
+  "_source": "https://github.com/guillaumepotier/Garlic.js.git",
+  "_target": "^1.4.2",
+  "_originalSource": "garlicjs"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "frappe-charts",
+  "homepage": "https://github.com/frappe/charts",
+  "_release": "81cddd45a3",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "81cddd45a3840618f8cedce4e7dcde3a98a3bc89"
+  },
+  "_source": "https://github.com/frappe/charts.git",
+  "_target": "*",
+  "_originalSource": "frappe-charts",
+  "_direct": true
+}
